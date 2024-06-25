@@ -1,44 +1,48 @@
 body {
- width: 100vw;
- 
+  width: 100vw;
   display: flex;
-  background-color: rgb(255, 255, 255);
+  flex-direction: column;
 }
+
 .container {
   padding: 0;
   margin: 0;
   display: flex;
+  width: 100vw;
 }
 
 img {
   width: 10px;
-  margin-right: 10px;
 }
 
 .box {
   position: absolute;
   height: 3%;
+  width: 100%;
 }
 
 .input_box input {
   border: none;
+  font-size: 9px;
+
   background-color: #fff;
 }
 .input_box {
   border-style: inset;
   border-radius: 30px;
   border-color: rgb(154, 150, 150);
-  width: 30%;
+  width: 100px;
+  height: 15px;
+  display: flex;
+  align-items: center;
 }
 
 input {
   border-radius: 30px;
+  width: 70px;
 }
 
-.game-container{
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    
-
+.game-container {
+  width: 100vw;
+  padding-left: 100px;
 }
