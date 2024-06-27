@@ -118,21 +118,24 @@ a:hover {
   padding-left: 20px;
 }
 
-.picture-games{
+.picture-games {
   display: flex;
   justify-content: center;
+  padding-top: 30px;
 }
 
-/*styles assasin html*/
-
+.img-collage {
+  border-radius: 50px;
+  /*styles assasin html*/
+}
 .back-btn {
   color: #16c59c;
 }
 .game-sections {
-  
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  
 }
 
 .game-section1 {
@@ -140,12 +143,15 @@ a:hover {
   justify-content: center;
 }
 
-.section1 {
+.section1,
+.section2,
+.section3 {
   display: flex;
   flex-direction: column;
   width: 300px;
   color: #ffffff;
-  justify-content: center;
+  justify-content: flex-start;
+  gap: 20px;
 }
 
 .image-assasin {
@@ -159,17 +165,11 @@ a:hover {
   border-radius: 20px;
 }
 
-
-
-.game-collection-text{
+.game-collection-text {
   display: flex;
   justify-content: center;
- 
-  
-  
-  
-  align-self: center;
 
+  align-self: center;
 }
 
 h3 {
@@ -204,7 +204,7 @@ h3:hover {
 
 /*Action html style*/
 
-.action-container{
+.action-container {
   color: #ffffff;
 }
 
@@ -287,6 +287,4 @@ input[name="r"] {
   font-size: 20px;
   border-radius: 15px;
   background: none;
- 
-  
 }
