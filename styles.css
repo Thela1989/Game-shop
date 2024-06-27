@@ -50,13 +50,22 @@ input {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  color: #16c59c;
-  padding-top: 10px;
+
+  padding-top: 30px;
 }
 
 a {
-  color: #16c59c;
-  padding: 10px;
+  color: aliceblue;
+  background: rgb(6, 157, 219);
+  background: linear-gradient(
+    90deg,
+    rgba(6, 157, 219, 1) 0%,
+    rgba(207, 3, 186, 1) 0%,
+    rgba(22, 197, 156, 1) 49%,
+    rgba(92, 4, 117, 1) 100%
+  );
+  border-radius: 15px;
+  margin: 20px;
 }
 
 .search-img {
@@ -65,7 +74,7 @@ a {
 }
 
 .logo {
-  width: 170px;
+  width: 30%;
 
   padding-top: 10px;
 }
@@ -82,15 +91,19 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: rgb(0, 211, 221);
+  color: rgb(255, 255, 255);
   text-decoration: underline;
 }
 /* styles Games.htm*/
 
+.title-games-2 {
+  background: none;
+}
+
 .title-games,
 .action-header,
 .assasin-header {
-  color: #16c59c;
+  color: #ffffff;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -105,12 +118,18 @@ a:hover {
   padding-left: 20px;
 }
 
+.picture-games{
+  display: flex;
+  justify-content: center;
+}
+
 /*styles assasin html*/
 
 .back-btn {
   color: #16c59c;
 }
 .game-sections {
+  
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -125,7 +144,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   width: 300px;
-  color: #16c59c;
+  color: #ffffff;
   justify-content: center;
 }
 
@@ -140,13 +159,17 @@ a:hover {
   border-radius: 20px;
 }
 
-h2 {
-  border-style: inset;
-  border-color: #16c59c;
-  border-radius: 20px;
-  width: 60%;
-  margin-left: 20%;
-  padding-left: 10px;
+
+
+.game-collection-text{
+  display: flex;
+  justify-content: center;
+ 
+  
+  
+  
+  align-self: center;
+
 }
 
 h3 {
@@ -165,7 +188,8 @@ h3 {
 .category-container {
   display: flex;
   justify-content: center;
-  color: #16c59c;
+  color: #ffffff;
+  padding-top: 20px;
 }
 
 h1 {
@@ -180,11 +204,16 @@ h3:hover {
 
 /*Action html style*/
 
+.action-container{
+  color: #ffffff;
+}
+
 /*slide show*/
 .slidershow {
-  width: 700px;
-  height: 400px;
+  width: 40%;
+  height: 50%;
   overflow: hidden;
+  padding-top: 10%;
 }
 .middle {
   position: absolute;
@@ -196,7 +225,7 @@ h3:hover {
   position: absolute;
   bottom: 20px;
   left: 50%;
-  transform: translateX(-60%);
+  transform: translateX(-50%);
   display: flex;
 }
 .bar {
@@ -248,4 +277,16 @@ input[name="r"] {
 }
 #r5:checked ~ .s1 {
   margin-left: -80%;
+}
+
+.a-assasin {
+  background: none;
+}
+
+.a-home {
+  font-size: 20px;
+  border-radius: 15px;
+  background: none;
+ 
+  
 }
