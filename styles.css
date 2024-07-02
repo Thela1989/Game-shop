@@ -1,9 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "poppins", sans-serif;
 }
 body {
   min-height: 100vh;
@@ -11,6 +11,9 @@ body {
   flex-direction: column;
   margin: 0;
   background-color: black;
+  margin: 0;
+  margin: 0;
+  font-family: "Noto Sans Mono", monospace;
 }
 
 .container {
@@ -59,16 +62,8 @@ input {
 }
 
 .color-btn {
-  color: aliceblue;
-  background: rgb(6, 157, 219);
-  background: linear-gradient(
-    90deg,
-    rgba(6, 157, 219, 1) 0%,
-    rgba(207, 3, 186, 1) 0%,
-    rgba(22, 197, 156, 1) 49%,
-    rgba(92, 4, 117, 1) 100%
-  );
-  border-radius: 15px;
+  color: #16c59c;
+
   margin: 20px;
 }
 
@@ -78,7 +73,7 @@ input {
 }
 
 .logo {
-  width: 30%;
+  width: 20%;
 
   padding-top: 10px;
 }
@@ -86,7 +81,7 @@ input {
 .navbar a {
   position: relative;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 30px;
   font-weight: 500;
   padding: 10px;
 }
@@ -94,7 +89,7 @@ input {
 a {
   text-decoration: none;
 }
-a:hover {
+.color-btn:hover {
   color: rgb(255, 255, 255);
   text-decoration: underline;
 }
@@ -112,14 +107,26 @@ a:hover {
   font-size: 30px;
 }
 
-.title-games,
+.action-title1 {
+  color: #16c59c;
+}
+
+.title-games {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 35px;
+}
+
 .assasin-header {
   color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 30px;
+  font-size: 20px;
   text-decoration: none;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
 .game-section {
@@ -135,8 +142,27 @@ a:hover {
   padding-top: 30px;
 }
 
+.img-1-section1,
+.img-2-section1,
+.img-3-section1,
+.img-4-section1,
+.img-1-section2,
+.img-2-section2,
+.img-3-section2,
+.img-4-section2,
+.img-1-section3,
+.img-2-section3,
+.img-3-section3,
+.img-4-section3 {
+  box-shadow: 3px 5px 123px 6px rgba(255, 255, 255, 0.83);
+  border-radius: 20px;
+}
+
 .img-collage {
   border-radius: 50px;
+  width: 60%;
+  box-shadow: 3px 5px 123px 6px rgba(255, 255, 255, 0.83);
+
   /*styles assasin html*/
 }
 
@@ -158,19 +184,22 @@ a:hover {
   flex-direction: column;
   width: 300px;
   color: #ffffff;
-  justify-content: flex-start;
+  justify-content: space-around;
   gap: 20px;
+  padding-bottom: 20px;
 }
 
 .image-assasin {
   border-style: outset;
   border-color: aliceblue;
   border-radius: 20px;
-  width: 100%;
+  width: 50%;
 }
 
-.img-assasin {
+.image-collection {
+  width: 300px;
   border-radius: 20px;
+  box-shadow: 3px 5px 123px 6px rgba(255, 255, 255, 0.83);
 }
 
 .game-collection-text {
@@ -178,11 +207,6 @@ a:hover {
   justify-content: center;
 
   align-self: center;
-}
-
-h3 {
-  margin-left: 25%;
-  padding-top: 10%;
 }
 
 .game-serie1 {
@@ -199,10 +223,11 @@ h3 {
   color: #ffffff;
   padding-top: 20px;
 }
+.category-text {
+  font-size: 40px;
+}
 
 h1 {
-  padding: 10px;
-
   justify-content: center;
 }
 
@@ -211,16 +236,38 @@ h3:hover {
 }
 
 /*Action html style*/
+.top-navigation {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.top-navigation-text {
+  color: #ffffff;
+  padding: 3px;
+  font-size: 20px;
+  border-style: ridge;
+  border-radius: 10px;
+  border-color: #16c59c;
+  margin: 10px;
+}
 
 .action-container {
   color: #ffffff;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+.action-game-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 25px;
+}
+
 /*slide show*/
 .slidershow {
-  width: 40%;
-  height: 50%;
+  width: 100%;
+  height: 60%;
   overflow: hidden;
   padding-top: 10%;
 }
@@ -267,9 +314,12 @@ input[name="r"] {
 }
 
 .slide img {
-  width: 100%;
+  width: 70%;
   height: 100%;
-  border-radius: 20px;
+  padding-left: 30%;
+  padding-top: 5%;
+
+  border-radius: 10px;
 }
 
 #r1:checked ~ .s1 {
@@ -292,11 +342,6 @@ input[name="r"] {
   background: none;
 }
 
-.a-home,
-.back-btn {
-  font-size: 20px;
-
-  background: none;
-  color: #ffffff;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+@media only screen and (min-width: 1440px) {
+  /* styles for browsers larger than 1440px; */
 }
