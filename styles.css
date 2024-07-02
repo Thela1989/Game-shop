@@ -61,10 +61,11 @@ input {
   margin: 20px;
 }
 
-.color-btn {
+.color-btn,
+.top-navigation-text {
   color: #16c59c;
-
-  margin: 20px;
+  margin: 10px;
+  font-size: 25px;
 }
 
 .search-img {
@@ -89,7 +90,8 @@ input {
 a {
   text-decoration: none;
 }
-.color-btn:hover {
+.color-btn:hover,
+.top-navigation-text:hover {
   color: rgb(255, 255, 255);
   text-decoration: underline;
 }
@@ -170,6 +172,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding-top: 30px;
 }
 
 .game-section1 {
@@ -242,19 +245,8 @@ h3:hover {
   flex-direction: row;
 }
 
-.top-navigation-text {
-  color: #ffffff;
-  padding: 3px;
-  font-size: 20px;
-  border-style: ridge;
-  border-radius: 10px;
-  border-color: #16c59c;
-  margin: 10px;
-}
-
 .action-container {
   color: #ffffff;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .action-game-text {
