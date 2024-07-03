@@ -96,6 +96,66 @@ a {
   text-decoration: underline;
 }
 /* styles Games.htm*/
+p {
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  border-radius: 20px;
+  font-weight: bold;
+  font-family: "Noto Sans Mono", monospace;
+}
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 361px;
+
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 300px;
+  height: 392px;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 30px;
+}
 
 .title-games-2 {
   background: none;
@@ -144,6 +204,17 @@ a {
   padding-top: 30px;
 }
 
+.img-4-section1, .img-4-section2 {
+  width: 100%;
+  height: 100%
+}
+
+.img-3-section2{
+  width: 300px;
+  height: 392px;
+}
+
+
 .img-1-section1,
 .img-2-section1,
 .img-3-section1,
@@ -158,6 +229,7 @@ a {
 .img-4-section3 {
   box-shadow: 3px 5px 123px 6px rgba(255, 255, 255, 0.83);
   border-radius: 20px;
+  width: 300px;
 }
 
 .img-collage {
@@ -172,7 +244,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-top: 30px;
+
 }
 
 .game-section1 {
@@ -188,7 +260,7 @@ a {
   width: 300px;
   color: #ffffff;
   justify-content: space-around;
-  gap: 20px;
+  gap: 50px;
   padding-bottom: 20px;
 }
 
@@ -263,6 +335,7 @@ h3:hover {
   overflow: hidden;
   padding-top: 10%;
 }
+
 .middle {
   position: absolute;
   top: 50%;
