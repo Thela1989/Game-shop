@@ -67,7 +67,6 @@ input {
   margin: 10px;
   font-size: 20px;
   font-family: "Noto Sans Mono", monospace;
-  
 }
 
 .search-img {
@@ -81,11 +80,11 @@ input {
   padding-top: 10px;
 }
 
-.navbar a{
+.navbar a {
   position: relative;
   text-decoration: none;
   font-size: 30px;
- 
+
   padding: 10px;
 }
 
@@ -185,12 +184,12 @@ p {
   font-size: 35px;
 }
 
-.assasin-header {
+.game-header {
   color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
- 
+
   text-decoration: none;
   align-items: center;
   padding-bottom: 20px;
@@ -209,18 +208,22 @@ p {
   padding-top: 30px;
 }
 
-
-
-
-.img-1-section1, .img-2-section3, .img-1-section2, .img-3-section2,  .img-1-section3, .img-4-section2, .img-4-section1, .img-3-section3{
-  
+.img-1-section1,
+.img-2-section3,
+.img-1-section2,
+.img-3-section2,
+.img-1-section3,
+.img-4-section2,
+.img-4-section1,
+.img-3-section3 {
   height: 392px;
 }
 
-.img-2-section2, .img-4-section3, .img-3-section1{
+.img-2-section2,
+.img-4-section3,
+.img-3-section1 {
   height: 100%;
 }
-
 
 .img-1-section1,
 .img-2-section1,
@@ -252,7 +255,6 @@ p {
   flex-direction: row;
   justify-content: space-around;
   padding-top: 60px;
-
 }
 
 .game-section1 {
@@ -313,9 +315,6 @@ p {
 
 h1 {
   justify-content: center;
- 
-  
-
 }
 
 h3:hover {
@@ -327,10 +326,9 @@ h3:hover {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  
 }
 
-.action-container{
+.action-container {
   color: #ffffff;
   font-family: "Noto Sans Mono", monospace;
 }
@@ -427,51 +425,53 @@ input[name="r"] {
 
 /*form*/
 
-.wallpaper{
+.wallpaper {
   width: 800px;
   height: 390px;
   justify-content: center;
   align-items: center;
- margin-left: 20%;
- margin-top: 5%;
+  margin-left: 25%;
+  margin-top: 5%;
   background-color: #16c59c;
   border-style: solid;
   border-color: #ffffff;
   border-radius: 30px;
   box-shadow: 3px 5px 123px 6px rgba(255, 255, 255, 0.83);
 }
-.form-box{
+.form-box {
   width: 100%;
   height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 10%;
-  
-  
 }
-#email-box{
+#email-box {
   height: 20%;
   width: 20%;
   border-radius: 10px;
   margin-bottom: 3px;
   border-color: #ffffff;
-  
-
-
 }
 
-#write-message{
+#write-message {
   width: 20%;
   height: 80%;
   border-radius: 10px;
   border-color: #ffffff;
 }
 
-button{
- width: 10%;
- height: 10%;
- border-radius: 10px;
- margin-top: 10px;
- border-color: #ffffff;
+button {
+  width: 10%;
+  height: 10%;
+  border-radius: 10px;
+  margin-top: 10px;
+  border-color: #ffffff;
+}
+
+.line {
+  border: none;
+  border-top: 1px solid #ffffff;
+  width: 100%;
+  margin-top: 20px;
 }
