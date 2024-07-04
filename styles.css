@@ -424,3 +424,54 @@ input[name="r"] {
 @media only screen and (min-width: 1440px) {
   /* styles for browsers larger than 1440px; */
 }
+
+/*form*/
+
+.wallpaper{
+  width: 800px;
+  height: 390px;
+  justify-content: center;
+  align-items: center;
+ margin-left: 20%;
+ margin-top: 5%;
+  background-color: #16c59c;
+  border-style: solid;
+  border-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 3px 5px 123px 6px rgba(255, 255, 255, 0.83);
+}
+.form-box{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10%;
+  
+  
+}
+#email-box{
+  height: 20%;
+  width: 20%;
+  border-radius: 10px;
+  margin-bottom: 3px;
+  border-color: #ffffff;
+  
+
+
+}
+
+#write-message{
+  width: 20%;
+  height: 80%;
+  border-radius: 10px;
+  border-color: #ffffff;
+}
+
+button{
+ width: 10%;
+ height: 10%;
+ border-radius: 10px;
+ margin-top: 10px;
+ border-color: #ffffff;
+}

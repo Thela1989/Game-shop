@@ -9,15 +9,22 @@
   <body>
     <header class="header">
       <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a class="color-btn" href="index.html">Home</a>
+        <a class="color-btn" href="games.html">Back</a>
+        
+
+     
+           
+          </nav>
+        </header>
       </nav>
     </header>
-    <form action="https://formsubmit.co/your@email.com" method="POST">
-      <input type="email" name="email" placeholder="Email Adress" required />
+    <div class="wallpaper">
+    <form class="form-box" action="https://formsubmit.co/therese8949@gmail.com" method="POST">
+      <input  type="hidden" name="_subject" value="New email"/>
+      <input id="email-box" type="email" name="email" placeholder="Email Adress" required />
       <input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyoupage.html" required />
-      <input type="email" name="email" required />
+      <input id="write-message" type="text" name="email" placeholder="Write your message here" required />
       <button type="submit">Send</button>
     </form>
   </body>
