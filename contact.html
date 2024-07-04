@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width initial-scale=1.0" />
     <title>Contact us</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="header">
@@ -13,5 +14,11 @@
         <a href="#">Contact</a>
       </nav>
     </header>
+    <form action="https://formsubmit.co/your@email.com" method="POST">
+      <input type="email" name="email" placeholder="Email Adress" required />
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyoupage.html" required />
+      <input type="email" name="email" required />
+      <button type="submit">Send</button>
+    </form>
   </body>
 </html>
