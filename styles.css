@@ -65,7 +65,7 @@ input {
 .top-navigation-text {
   color: #16c59c;
   margin: 10px;
-  font-size: 25px;
+  font-size: 15px;
   font-family: "Noto Sans Mono", monospace;
 }
 
@@ -481,4 +481,40 @@ button {
   width: 100%;
 
   margin-top: 20px;
+}
+
+@media only screen and (max-device-width: 480px) {
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
+
+  .navbar {
+    display: flex;
+  }
+
+  .header {
+    padding: 0;
+    font-size: 2px;
+  }
+
+  .highlight {
+    font-size: 40px;
+  }
+  .logo {
+    width: 60%;
+  }
+  .slidershow {
+    width: 100%;
+
+    overflow: hidden;
+  }
+
+  .slides {
+    height: 300px;
+    width: 2;
+
+    padding-top: 95px;
+  }
+
+  .slidershow.middle {
+    height: 50%;
+  }
 }
